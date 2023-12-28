@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="cat">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+   <h1>INPUTS AMB TEXT</h1> 
+   <p>És el tipus d'input que surt per defecte.</p>
+
+   <h2>Atributs habituals</h2>
+   <p>És fan servir els seguents atributs:</p>
+
+   <ul>
+   <li><h3>Name</h3></li>
+   </ul>
+
+   <p>Quan els usuaris introdueixen informació en un formulari, el servidor necessita saber a quin fromulari controla cada tipus de dada introduïda. En un formulari d'inici de sessió,  el servidor necessita saber què s'ha introduït com a nom d'usuari i què s'ha proporcionat com a contrasenya</p>
+
+   <form>Name
+    <input type="name">
+   </form>
+
+   <ul>
+    <li><h3>Maxlength</h3></li>
+   </ul>
+   <p>L'atrubit maxlength s'utilitza per limitar el nombre de caràcters que un usuari pot introduir en un camp de text del formulari. El seu valor és el nombre de caràcters que poden introduïr. Si es demana un any, l'atribut maxlength pot tenir un valor de 4.</p>
+
+   <form>
+    <input type="text" maxlength="10">
+   </form>
+
+   <ul>
+    <li><h3>Size</h3></li>
+   </ul>
+
+   <p>Per indicar l'amplada de l'entrada de text. Aquest artibut no s'hauria d'utilitzar</p>
+
+   <form>
+    <input type="text"
+    maxlength="4"
+    size="20">
+   </form>
+
+   <ul>
+    <li><h3>Value</h3></li>
+   </ul>
+
+   <p>Per establir un valor predeterminat en un camp d'entrada de text HTML. Quan es carrega una pàgina web que conté un atribut value definit, el valor especificat es mostrarà automàticament en el camp.</p>
+
+   <form>
+    <input type="text"
+    value="2021"
+    maxlength="4" size="25">
+     </form>
+
+    <ul>
+        <li><h3>Placeholder</h3></li>
+    </ul>
+    
+    <p>Guiar a l'usuari perquè posin allò que desitgem. Es pinten amb un color més fluixet i desapareix quan posem la nostra resposta. </p>
+
+    
+    <div>
+        <input type="text"
+        id="email"
+        name="email_work"
+        placeholder="posa aquí el teu correu electrònic de l'escola"
+        size="60">
+    </div>
+
+    <ul>
+        <li><h3>Pattern</h3></li>
+    </ul>
+
+    <p>Aquest atribut va acompanyat d'una expressió regular o regex. Impedeix posar qualsevol text que no sigui el que hem posat en l'expressió regular.</p>
+
+    <form>
+        <div>
+            <label for="birthday_year">Any de naixement</label>
+        </div>
+        <div>
+            <input type="text"
+            id="birthday_year"
+            name="birthday_year"
+            pattern="^[1-9][0-9]{3}$"
+            [12][0123456789]
+            size="40">
+        </div>
+        <div>
+            <button>Enviar</button>
+        </div>
+    </form>
+
+    <ul>
+        <li><h3>Required</h3></li>
+    </ul>
+
+    <p>Aquest atribut booleà fa que la casella s'hagi d'omplir obligatòriament.</p>
+    
+    <form>
+        <div>
+            <label for="birthday_year">Any de naixement</label>
+        </div>
+        <div>
+            <input type="text"
+            id="birthday_year"
+            name="birthday_year"
+            required
+            size="40">
+        </div>
+        <div>
+            <button>Enviar</button>
+        </div>
+    </form>
+
+</body>
+</html>

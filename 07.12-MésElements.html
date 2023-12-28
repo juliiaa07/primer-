@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="cat">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <h1>MÉS ELEMENTS DELS FORMULARIS</h1>
+
+    <h2>Etiqueta fieldset</h2>
+
+    <p>S'utilitza per agrupar elements dins d'un formulari. Té etiqueta d'obertura i de tancament. Sovint va acompanyada per l'etiqueta legend.</p>
+
+    <form>
+        <fieldset>
+            <label for="name">Nom</label>
+            <input type="text" id="name">
+            <label for="surname">Cognom</label>
+            <input type="text" id="surname">
+        </fieldset>
+    </form>
+
+    <h2>Input tipus file</h2>
+
+    <p>Serveix per afegir un fitxer al formulari.</p>
+
+    <form>
+        <fieldset>
+            <legend>Dades personals</legend>
+
+            <div>
+                <label for="name">Nom</label>
+                <input type="text" id="name">
+            </div>
+
+            <div>
+                <label for="surname">Cognom</label>
+                <input type="text" id="surname">
+            </div>
+
+            <input type="file">
+        </fieldset>
+    </form>
+
+    <h2>Etiqueta meter</h2>
+
+    <p>A part de l'atribut indispensable value, porta atributs min, max, low, high i optimum.</p>
+
+    <form>
+        <label for="fuel">Combiustible</label>
+        <meter id="fuel" min="0" max="100" value="90" low="30" high="75"
+        optimum="25"></meter>
+    </form>
+
+    <h2>Etiqueta progress</h2>
+
+    <p>Porta els atributs value i max. Crea una barra de progress en funció dels atributs value  i max. Una bona pràctica és treballar amb percentatges. Dues barres, una amb max 200 i l'altra amb max 100 tenen la mateixa longutud.</p>
+
+    <form>
+        <label for="task">Tasca 1
+        </label>
+        <progress id="task" max="100" value="60"></progress>
+    </form>
+
+    <form>
+        <label for="task">Tasca 2
+        </label>
+        <progress id="task" max="100" value="80"></progress>
+    </form>
+
+    <h2>Etiqueta textarea</h2>
+
+    <p>Porta els atributs cols i rows amb valors numèrics</p>
+
+    <form>
+        <div>
+            <label for="message">Escriu el teu missatge</label>
+        </div>
+        <textarea name="" id="message" cols="10" rows="10"></textarea>
+    </form>
+
+</body>
+</html>

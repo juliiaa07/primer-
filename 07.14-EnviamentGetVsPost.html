@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="cat">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <h1>Enviament Get Vs Post</h1>
+
+    <h2>Mètode Get</h2>
+
+    <p>És el mèdote d'entrada a pàgines web quan nosaltres hi entrem a través de la url. Poseu l'atribut action amb el valor "enviar html" i l'atribut method amb el valor get. </p>
+
+    <h3>Sense atribut name</h3>
+
+    <form action="enviar.html" method="get">
+        <label for="name">Nom</label>
+        <input type="text" id="name">
+        <label for="surname">Cognom</label>
+        <input type="text" id="surname">
+        <input type="submit">
+    </form>
+
+    <p>Quan no existeix el fitxer que posem a l'action ens retorna un error "Cannot GET /enviar.html"</p>
+
+    <p>Malgrat posem el nom i els cognoms al cap, res no s'envia perquè en la URL després del signe ? no hi ha cap informació.</p>
+
+    <h3>Amb atribut name</h3>
+
+    <form action="enviar.html" method="get">
+        <label for="name">Nom</label>
+        <input type="text" id="name" name="nom">
+        <label for="surname">Cognom</label>
+        <input type="text" id="surname" name="cognom">
+        <input type="submit">
+    </form>
+
+    <p>Amb els atributs name emplenats, podem veure que a la URL apareixen els camps.</p>
+
+    <h2>Mètode post</h2>
+
+    <p>És un enviament del formulari per la porta de darrera. L'Error 405 que surt significa que ha intentat enviar les dades però aquestes dades no hann arribat al destí.</p>
+
+    <form action="enviar.html" method="post">
+        <label for="name">Nom</label>
+        <input type="text" id="name" name="nom">
+        <label for="surname">Cognom</label>
+        <input type="text" id="surname" name="cognom">
+        <input type="submit">
+    </form>
+
+    <p>Si enviem el formulari, inspeccionant la pàgina hem d'anar a network (payload)</p>
+
+</body>
+</html>

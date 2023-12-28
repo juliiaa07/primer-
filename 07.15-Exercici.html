@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="cat">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <form>
+
+    <h1>FORMULARI DE DADES</h1>
+
+    <fieldset>
+
+<div>
+    <h3>DADES PERSONALS</h3>
+
+    <form>
+            <div>
+                <label for="name">Nom</label>
+            </div>
+    
+            <input type="text"
+            id="name"
+            name="name"
+            required>
+    
+            <div>
+                <label for="surname">Cognom</label>
+            </div>
+    
+            <input type="text" 
+            name="surname" 
+            id="surname"
+            required>
+    
+            <div>
+                <label for="address">Adreça</label>
+            </div>
+    
+            <input type="text"
+            name="address"
+            id="address">
+    
+            <button>Envia</button>
+    </form>
+</div>
+
+<div>
+    <h3>GÉNERE I ESTAT CIVIL</h3>
+    
+    <form>
+
+        <div>
+            <label>Masculí</label>
+            <input type="radio" name="gender" value="male" autofocus required>
+    
+            <label>Femení</label>
+            <input type="radio" name="gender" value="female" required>
+    
+            <label>No binari</label>
+            <input type="radio" name="gender" value="no_binary" required>
+        </div>
+
+            <label for="estat_civil">Estat Civil</label>
+            <select name="estat_civil" id="estat_civil">
+                <option value="Solter/a">Solter/a</option>
+                <option value="amb_parella">Amb Parella</option>
+            </select>
+            <button>Envia</button>
+    </form>
+</div>
+
+
+<div>
+        <h3>DATA DE NAIXEMENT</h3>
+    
+        <form>
+                <input type="date" required>
+                <button>Envia</button>
+        </form>
+</div>
+
+<div>
+        <h3>ADREÇA ELECTRÒNICA</h3>
+    
+        <form>
+                <div>
+                    <label for="email_work">Adreça electrònica</label>
+                </div>
+                <div>
+                    <input type="text"
+                    id="email_work"
+                    name="email"
+                    required
+                    placeholder="Escriu l'adreça electrònica">
+                </div>
+                <button>Envia</button>
+        </form>
+</div>
+
+<div>
+        <h3>NÚMERO DE MÒBIL</h3>
+    
+        <form>
+                <input type="text"
+                minlength="9"
+                maxlength="9"
+                required>
+                <button>Envia</button>
+        </form>
+</div>
+
+<div>
+    <h3>COMPTE D'INSTAGRAM I TWITTER</h3>
+
+    <form>
+            <div>
+                <label for="instagram_account">Compte d'Instagram</label>
+            </div>
+            <div>
+                <input type="text"
+                id="instagram_account"
+                name="instagram_account"
+                placeholder="@..." required
+                pattern="@">
+            </div>
+    
+            <div>
+                <label for="twitter_acount">Compte de Twitter</label>
+            </div>
+            <div>
+                <input type="text"
+                id="twitter_acount"
+                name="twitter_acount"
+                placeholder="@..."
+                required
+                pattern="@">
+    
+                <button>Envia</button>
+            </div>
+    </form>
+</div>
+
+<div>
+
+    <h3>PREFERÈNCIES DE POSICIÓ EN EL CAMP</h3>
+
+    <form>
+            <label for="posicio_camp">Posició en el camp</label>
+            <select name="posicio_camp" id="camp_position">
+                <option value="defensa_central">Defensa Central</option>
+                <option value="lateral">Lateral</option>
+                <option value="migcampista">Migcampista</option>
+                <option value="Davanter_centre">Davanter Centre</option>
+                <option value="extrem">Extrem</option>
+            </select>
+            <button>Envia</button>
+    </form>
+</div>
+
+<div>
+    <h3>CARNET</h3>
+
+    <form>
+            <div>
+                <label for="carnet">Carnet</label>
+                <input type="file">
+                <button>Envia</button>
+            </div>
+    </form>
+</div>
+
+<div>
+    <h3>COLOR ARMARIET</h3>
+
+    <form>
+        <p>Escull el color del teu armariet:</p>
+            <input type="color">
+            <button>Envia</button>
+    </form>
+</div>
+
+<div>
+    <h3>VIATGE FINAL TEMPORADA</h3>
+
+    <form>
+            <label for="week">Escull una setmana pel viatge final de temporada</label>
+            <input type="week">
+            <button>Envia</button>
+    </form>
+</div>
+
+<br>
+
+<div>
+    <button>ENVIA FORMULARI</button>
+</div>
+
+</fieldset>
+
+</form>
+
+</body>
+</html>

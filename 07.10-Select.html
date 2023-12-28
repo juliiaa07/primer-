@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Select</h1>
+
+    <h2>Element HTML select bàsic</h2>
+    <p>L'etiqueta select serveix per seleccionar entre una llista d'opcions un o més ítems.</p>
+
+    <form>
+        <select>
+
+        </select>
+    </form>
+
+    <p>Si es posa l'etiqueta select sola, activa una llista deseplegable però no es veu res.</p>
+
+    <h2>Etiqueta option</h2>
+
+    <p>Cada etiqueta option afegeix un ítem per poder triar en el menú desplegable. El select porta l'atribut name i les etiquetes option els atributs value.</p>
+
+    <form >
+        <label for="languages">Tria els llenguatges web que controlis</label>
+        <select name="llenguatges" id="languages">
+        <option value="html">HTML</option>
+        <option value="CSS">CSS</option>
+        <option value="JavaScript">JavaScript</option></select>
+    </form>
+
+    <h3>Atribut múltiple</h3>
+
+    <p>L'atribut múltiple, que es posa dins l'etiqueta select, ens permet escollir-ne més d'un si apretem la tecla Control</p>
+
+    <form>
+    <label for="languages">Tria els llenguatges web que controlis</label>
+
+    <select name="llenguatges" multiple>
+        <option value="html">HTML</option>
+
+        <option value="css">CSS</option>
+
+        <option value="javascript">JavaScript</option>
+    </select>
+</form>
+
+<!-- s'ha de seleccionar apretant la tecla Control -->
+
+<h2>Element tecla select avançat</h2>
+
+<select name="pets">
+
+    <optgroup label="Ocells">
+        <option value="pardal">pardal</option>
+        <option value="cadernera">cadernera
+        </option>
+    </optgroup>
+
+    <optgroup label="Rèptils">
+        <option value="cocodril">cocodril</option>
+        <option value="serp">serp</option>
+        <option value="tortuga">tortuga</option>
+        <option value="iguana">iguana</option>
+    </optgroup>
+
+    <optgroup label="Mamífers">
+        <option value="bufal">búfal</option>
+        <option value="lleo">lleó</option>
+        <option value="guineu">guineu</option>
+        <option value="rinoceront">rinoceront</option>
+    </optgroup>
+
+</select>
+    
+</body>
+</html>

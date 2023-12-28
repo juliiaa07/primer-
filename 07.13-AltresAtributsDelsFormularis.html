@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <h1>ALTRES ATRIBUTS PELS FORMULARIS</h1>
+
+    <h2>Atribut placeholder</h2>
+
+    <p>Serveix per dibuixar instruccions. Quan l'usuari escriu es borra.</p>
+
+    <form>
+        <label for="name">Nom:</label>
+        <input type="text" id="name" placeholder="Introdueix el teu nom" required>
+        <button>Enviar</button>
+    </form>
+
+    <h2>Atribut readonly</h2>
+
+    <p>El camp no es pot canviar però si que s'envia.</p>
+
+    <form>
+        <label for="name">Nom:</label>
+        <input type="text" id="name" value="Júlia" readonly>
+        <button>Enviar</button>
+    </form>
+
+    <h2>Atributs min i max</h2>
+
+    <p>Estableixen el min i el max d'un camp numèric. En podem només posar un si volem o tots.</p>
+
+    <form>
+        <label for="name">Nom:</label>
+        <input type="number" id="age" min="12" max="19">
+        <button>Enviar</button>
+    </form>
+
+    <h2>Atributs minlenght i maxlenght</h2>
+
+    <p>Estableixen el min i el max de caràcters per un camp de text. En podem nomñes posar un si volem o tots dos.</p>
+
+    <form>
+        <label for="professio">Introdueix la teva professió:</label>
+        <input type="text" id="professio" maxlength="30">
+        <button>Enviar</button>
+    </form>
+
+</body>
+</html>
